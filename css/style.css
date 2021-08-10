@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+* {
+  font-family: 'Caveat', cursive;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 100px;
+}
+
+.title-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 20px; */
+  position: sticky;
+  top: 0;
+}
+
+.title-links li {
+  list-style: none;
+  padding: 0 30px;
+}
+
+.title-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.title-links .title {
+  cursor: pointer;
+  font-size: 35px;
+  width: 60%;
+  font-weight: 900;
+}
+
+.title-links .title a {
+  text-decoration: none;
+  color: black;
+}
+
+.title-links .links {
+  width: 40%;
+  display: flex;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 30px;
+}
+
+.intro-title {
+  font-size: 80px;
+  font-weight: 900;
+  margin-top: 50px;
+}
+
+.underline {
+  width: 12rem;
+  height: 0.25rem;
+  background: black;
+  margin-right: auto;
+}
+
+.portfolio-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-section {
+  display: flex;
+  width: 60%;
+}
+
+.profile-photo {
+  width: 60vw;
+  height: 95vh;
+}
