@@ -52,6 +52,7 @@ body {
 .main-section {
   display: flex;
   flex-direction: row;
+  height: 95vh;
 }
 
 .left-section {
@@ -67,11 +68,17 @@ body {
   margin-top: 50px;
 }
 
+.about,
+.location {
+  opacity: 0.6;
+}
+
 .underline {
   width: 12rem;
   height: 0.25rem;
   background: black;
   margin-right: auto;
+  transform: perspective(1px) translateZ(0);
 }
 
 .portfolio-link a {
@@ -87,4 +94,95 @@ body {
 .profile-photo {
   width: 60vw;
   height: 95vh;
+}
+
+#portfolio {
+  margin-top: 12%;
+}
+
+.liner {
+  display: flex;
+  flex-direction: row;
+}
+
+.underline-per {
+  margin-top: 10px;
+  width: 5%;
+  height: 0.05rem;
+  background: black;
+  margin-right: auto;
+}
+
+.line {
+  width: 94%;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.portfolio-section {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15%;
+}
+
+.left {
+  flex-direction: row-reverse;
+}
+
+.paras {
+  width: 40%;
+  text-align: justify;
+}
+
+.section-tag {
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.section-sub-tag {
+  font-size: 25px;
+  opacity: 0.6;
+}
+
+.p-01 {
+  margin-left: 70px;
+  border-radius: 15px;
+  height: 40vh;
+  animation-delay: 0.25s !important;
+  transition: all 0.65s;
+}
+
+.p-02 {
+  width: 40vw;
+  margin-right: 70px;
+  border-radius: 15px;
+  height: 40vh;
+  animation-delay: 0.25s !important;
+  transition: all 0.65s;
+}
+
+.p-03 {
+  margin-left: 70px;
+  border-radius: 15px;
+  height: 40vh;
+  animation-delay: 0.25s !important;
+  transition: all 0.65s;
+  width: 40vw;
+}
+
+.p-04 {
+  width: 40vw;
+  margin-right: 70px;
+  border-radius: 15px;
+  height: 40vh;
+  animation-delay: 0.25s !important;
+  transition: all 0.65s;
+}
+
+.p-01:hover,
+.p-02:hover,
+.p-03:hover,
+.p-04:hover {
+  transform: scale(1.05);
 }
