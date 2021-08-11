@@ -4,6 +4,14 @@
   padding: 0px;
 }
 
+:root {
+  /* --clr-secondary: hsla(182, 63%, 54%); */
+  --clr-grey-1: rgb(40, 39, 43);
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+  --clr-white: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,6 +27,7 @@ body {
   /* padding: 20px; */
   position: sticky;
   top: 0;
+  background: var(--clr-white);
 }
 
 .title-links li {
@@ -44,9 +53,19 @@ body {
   color: black;
 }
 
+.title-links .title a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+
 .title-links .links {
   width: 40%;
   display: flex;
+}
+
+.title-links .links a:hover {
+  text-decoration: underline;
+  color: grey;
 }
 
 .main-section {
@@ -78,7 +97,6 @@ body {
   height: 0.25rem;
   background: black;
   margin-right: auto;
-  transform: perspective(1px) translateZ(0);
 }
 
 .portfolio-link a {
@@ -185,4 +203,110 @@ body {
 .p-03:hover,
 .p-04:hover {
   transform: scale(1.05);
+}
+
+.about-me {
+  margin-top: 5%;
+}
+
+.about-intro {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.about-me .about {
+  font-size: 30px;
+  text-align: justify;
+  width: 51vw;
+}
+
+/* .about-me .about-sub-intro {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-me .about-sub-intro-2 {
+  margin-top: 15px;
+  opacity: 0.6;
+  font-size: 30px;
+} */
+
+.about-me .about a {
+  text-decoration: underline;
+  color: blue;
+  font-weight: 900;
+}
+
+#contact {
+  margin-top: 10%;
+}
+
+.email {
+  margin-top: 10%;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.contact-line {
+  font-size: 30px;
+  width: 51vw;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: black;
+}
+.contact-details a i {
+  padding: 5px;
+  font-size: 50px;
+}
+
+.footer {
+  margin-top: 10%;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 25px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+  padding-left: 3px;
+}
+
+.top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-grey-1);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  animation: bounce 2s ease-in-out infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
